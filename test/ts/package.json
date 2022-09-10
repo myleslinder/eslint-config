@@ -1,0 +1,16 @@
+{
+	"name": "ts-confirmation",
+	"version": "0.0.1",
+	"packageManager": "pnpm@7.11.0",
+	"sideEffects": false,
+	"scripts": {
+		"lint": "eslint"
+	},
+	"devDependencies": {
+		"eslint": "^8.5.0",
+		"@myleslinder/eslint-config-ts": "workspace:*"
+	},
+	"keywords": [],
+	"author": "Myles Linder",
+	"license": "MIT"
+}

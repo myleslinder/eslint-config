@@ -8,12 +8,7 @@ module.exports = {
 		node: true,
 	},
 	reportUnusedDisableDirectives: true,
-	extends: [
-		"eslint:recommended",
-		"plugin:import/recommended",
-		"plugin:yml/standard",
-		"prettier",
-	],
+	extends: ["eslint:recommended", "plugin:yml/standard", "prettier"],
 	ignorePatterns: [
 		"*.min.*",
 		"*.d.ts",
@@ -34,19 +29,13 @@ module.exports = {
 		"/node_modules",
 		"/build",
 	],
-	plugins: ["unicorn", "import"],
+	plugins: ["unicorn"],
 	overrides: [
 		{
 			files: ["*.yaml", "*.yml"],
 			parser: "yaml-eslint-parser",
 			rules: {
 				"spaced-comment": "off",
-			},
-		},
-		{
-			files: ["*.d.ts"],
-			rules: {
-				"import/no-duplicates": "off",
 			},
 		},
 		{
@@ -57,12 +46,6 @@ module.exports = {
 		},
 	],
 	rules: {
-		// import
-		"import/order": "warn",
-		"import/first": "error",
-		"import/no-mutable-exports": "warn",
-		"import/no-unresolved": "off",
-
 		// Common
 		"no-unused-vars": "warn",
 		"no-param-reassign": "off",
@@ -152,9 +135,6 @@ module.exports = {
 			"error",
 			{ functions: false, classes: false, variables: true },
 		],
-		"import/no-named-as-default-member": "off",
-		"import/no-named-as-default": "off",
-		"import/namespace": "off",
 
 		// yml
 		"yml/quotes": ["error", { prefer: "single", avoidEscape: false }],

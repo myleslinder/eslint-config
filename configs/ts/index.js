@@ -1,17 +1,19 @@
 /**
  * @type {import('eslint').Linter.Config}
  */
+// let project = [`${__dirname}/tsconfig.json`];
+// console.log({ project });
+
 module.exports = {
-	extends: ["@myleslinder/eslint-config"],
 	parser: "@typescript-eslint/parser",
 	parserOptions: {
 		ecmaVersion: "latest",
 		sourceType: "module",
-		project: ["./tsconfig.json"],
+		// project,
 	},
 	extends: [
 		"plugin:@typescript-eslint/recommended",
-		"plugin:@typescript-eslint/recommended-requiring-type-checking",
+		// "plugin:@typescript-eslint/recommended-requiring-type-checking",
 		"@myleslinder/eslint-config",
 	],
 	plugins: ["@typescript-eslint"],
@@ -21,8 +23,8 @@ module.exports = {
 			{ "ts-ignore": "allow-with-description" },
 			{ "ts-error": "allow-with-description" },
 		],
-		"@typescript-eslint/no-floating-promises": "error",
-		"@typescript-eslint/no-misused-promises": "error",
+		// "@typescript-eslint/no-floating-promises": "error",
+		// "@typescript-eslint/no-misused-promises": "error",
 		"@typescript-eslint/no-unused-vars": "off",
 		"@typescript-eslint/consistent-type-imports": "warn",
 		"@typescript-eslint/consistent-type-definitions": "off",

@@ -1,0 +1,21 @@
+{
+	"name": "react-confirmation",
+	"version": "0.0.1",
+	"packageManager": "pnpm@7.11.0",
+	"sideEffects": false,
+	"scripts": {
+		"lint": "eslint"
+	},
+	"dependencies": {
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
+	"devDependencies": {
+		"eslint": "^8.5.0",
+		"@myleslinder/eslint-config-react": "workspace:*",
+		"@types/react": "^18.0.18"
+	},
+	"keywords": [],
+	"author": "Myles Linder",
+	"license": "MIT"
+}

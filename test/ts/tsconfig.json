@@ -1,0 +1,25 @@
+{
+	"include": ["."],
+	"compilerOptions": {
+		"target": "es6",
+		"module": "commonjs",
+		"moduleResolution": "node",
+
+		"esModuleInterop": true,
+		"jsx": "react-jsx",
+		"forceConsistentCasingInFileNames": true,
+		"declaration": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noImplicitAny": true,
+		"noFallthroughCasesInSwitch": true,
+		"noUncheckedIndexedAccess": true,
+		"noImplicitThis": true,
+		"useDefineForClassFields": true,
+		"isolatedModules": true,
+		"strict": true,
+		"skipLibCheck": false,
+		"baseUrl": "."
+	},
+	"exclude": ["node_modules", "dist"]
+}
