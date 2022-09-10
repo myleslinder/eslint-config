@@ -12,7 +12,6 @@ module.exports = {
 		"eslint:recommended",
 		"plugin:import/recommended",
 		"plugin:yml/standard",
-		"plugin:markdown/recommended",
 		"prettier",
 	],
 	ignorePatterns: [
@@ -124,7 +123,6 @@ module.exports = {
 		"vars-on-top": "error",
 		"require-await": "off",
 		"no-return-assign": "off",
-		"operator-linebreak": ["error", "before"],
 
 		// unicorns
 		// Pass error message when throwing errors
@@ -157,16 +155,6 @@ module.exports = {
 		"import/no-named-as-default-member": "off",
 		"import/no-named-as-default": "off",
 		"import/namespace": "off",
-		"sort-imports": [
-			"error",
-			{
-				ignoreCase: false,
-				ignoreDeclarationSort: true,
-				ignoreMemberSort: false,
-				memberSyntaxSortOrder: ["none", "all", "multiple", "single"],
-				allowSeparatedGroups: false,
-			},
-		],
 
 		// yml
 		"yml/quotes": ["error", { prefer: "single", avoidEscape: false }],

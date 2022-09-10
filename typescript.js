@@ -2,14 +2,30 @@
  * @type {import('eslint').Linter.Config}
  */
 module.exports = {
-	extends: ["plugin:@typescript-eslint/recommended", "@myleslinder"],
+	extends: ["@myleslinder"],
 	parser: "@typescript-eslint/parser",
-	plugins: ["@typescript-eslint"],
 	parserOptions: {
 		ecmaVersion: "latest",
 		sourceType: "module",
-		project: ["./tsconfig.json"],
 	},
+	overrides: [
+		{
+			files: ["*.ts", "*.tsx"], // Your TypeScript files extension
+
+			// As mentioned in the comments, you should extend TypeScript plugins here,
+			// instead of extending them outside the `overrides`.
+			// If you don't want to extend any rules, you don't need an `extends` attribute.
+			extends: [
+				"plugin:@typescript-eslint/recommended",
+				"plugin:@typescript-eslint/recommended-requiring-type-checking",
+			],
+			plugins: ["@typescript-eslint"],
+
+			parserOptions: {
+				project: ["./tsconfig.json"], // Specify it only for TypeScript files
+			},
+		},
+	],
 	rules: {
 		// TS
 		"@typescript-eslint/ban-ts-comment": [
