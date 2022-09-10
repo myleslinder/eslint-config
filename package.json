@@ -1,0 +1,40 @@
+{
+	"name": "@myleslinder/eslint-config",
+	"version": "0.0.1",
+	"description": "ESlint config presets",
+	"packageManager": "pnpm@7.11.0",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/myleslinder/eslint-config"
+	},
+	"homepage": "https://github.com/myleslinder/eslint-config",
+	"sideEffects": false,
+	"scripts": {},
+	"dependencies": {
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-yml": "^1.1.0",
+		"eslint-plugin-markdown": "^3.0.0",
+		"eslint-plugin-unicorn": "^43.0.2",
+		"@remix-run/eslint-config": "^1.7.0",
+		"eslint-plugin-jsx-a11y": "^6.6.1",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"@typescript-eslint/eslint-plugin": "^5.8.1",
+		"@typescript-eslint/parser": "^5.8.1",
+		"typescript": "^4.8.3"
+	},
+	"devDependencies": {
+		"eslint": "^8.5.0",
+		"prettier": "2.7.1"
+	},
+	"pnpm": {
+		"peerDependencyRules": {
+			"ignoreMissing": [
+				"react",
+				"react-dom"
+			]
+		}
+	},
+	"keywords": [],
+	"author": "Myles Linder",
+	"license": "MIT"
+}
