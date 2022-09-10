@@ -7,7 +7,7 @@ module.exports = {
 		"@remix-run/eslint-config/node",
 		"@remix-run/eslint-config/jest-testing-library",
 		"plugin:react-hooks/recommended",
-		"@myleslinder/typescript",
+		"@myleslinder/eslint-config/typescript",
 	],
 	plugins: ["jsx-a11y"],
 	settings: {

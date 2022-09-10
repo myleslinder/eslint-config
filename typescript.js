@@ -2,12 +2,13 @@
  * @type {import('eslint').Linter.Config}
  */
 module.exports = {
-	extends: ["plugin:@typescript-eslint/recommended", "@myleslinder/base"],
+	extends: ["plugin:@typescript-eslint/recommended", "@myleslinder"],
 	parser: "@typescript-eslint/parser",
 	plugins: ["@typescript-eslint"],
 	parserOptions: {
 		ecmaVersion: "latest",
 		sourceType: "module",
+		project: ["./tsconfig.json"],
 	},
 	rules: {
 		// TS
@@ -20,10 +21,6 @@ module.exports = {
 		"@typescript-eslint/no-misused-promises": "error",
 		"@typescript-eslint/no-unused-vars": "off",
 		"@typescript-eslint/consistent-type-imports": "warn",
-		"@typescript-eslint/member-delimiter-style": [
-			"error",
-			{ multiline: { delimiter: "none" } },
-		],
 		"@typescript-eslint/consistent-type-definitions": "off",
 		"@typescript-eslint/prefer-ts-expect-error": "error",
 
