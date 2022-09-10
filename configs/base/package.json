@@ -1,6 +1,6 @@
 {
 	"name": "@myleslinder/eslint-config",
-	"version": "0.0.32",
+	"version": "0.0.33",
 	"description": "ESlint config presets base",
 	"packageManager": "pnpm@7.11.0",
 	"repository": {

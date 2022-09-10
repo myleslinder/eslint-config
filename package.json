@@ -1,6 +1,6 @@
 {
-	"name": "@myleslinder/eslint-config-monorepo",
-	"version": "0.0.31",
+	"name": "root",
+	"version": "0.0.1",
 	"description": "ESlint config presets",
 	"packageManager": "pnpm@7.11.0",
 	"repository": {
