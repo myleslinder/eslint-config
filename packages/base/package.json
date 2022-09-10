@@ -1,7 +1,7 @@
 {
-	"name": "@myleslinder/eslint-config-monorepo",
-	"version": "0.0.31",
-	"description": "ESlint config presets",
+	"name": "@myleslinder/eslint-config",
+	"version": "0.0.1",
+	"description": "ESlint config presets base",
 	"packageManager": "pnpm@7.11.0",
 	"repository": {
 		"type": "git",
@@ -9,11 +9,13 @@
 	},
 	"homepage": "https://github.com/myleslinder/eslint-config",
 	"sideEffects": false,
-	"scripts": {
-		"release": "pnpm -r publish --scope=@myleslinder --access public"
+	"dependencies": {
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-yml": "^1.1.0",
+		"eslint-plugin-unicorn": "^43.0.2"
 	},
-	"dependencies": {},
 	"devDependencies": {
+		"eslint": "^8.5.0",
 		"prettier": "2.7.1"
 	},
 	"keywords": [],

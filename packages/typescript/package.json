@@ -1,7 +1,7 @@
 {
-	"name": "@myleslinder/eslint-config-monorepo",
+	"name": "@myleslinder/eslint-config-ts",
 	"version": "0.0.31",
-	"description": "ESlint config presets",
+	"description": "ESlint config presets typescript",
 	"packageManager": "pnpm@7.11.0",
 	"repository": {
 		"type": "git",
@@ -12,9 +12,14 @@
 	"scripts": {
 		"release": "pnpm -r publish --scope=@myleslinder --access public"
 	},
-	"dependencies": {},
+	"dependencies": {
+		"@typescript-eslint/eslint-plugin": "^5.8.1",
+		"@typescript-eslint/parser": "^5.8.1",
+		"typescript": "^4.8.3",
+		"@myleslinder/eslint-config": "workspace:*"
+	},
 	"devDependencies": {
-		"prettier": "2.7.1"
+		"eslint": "^8.5.0"
 	},
 	"keywords": [],
 	"author": "Myles Linder",

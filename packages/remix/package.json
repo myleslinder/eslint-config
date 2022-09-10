@@ -1,5 +1,5 @@
 {
-	"name": "@myleslinder/eslint-config-monorepo",
+	"name": "@myleslinder/eslint-config-remix",
 	"version": "0.0.31",
 	"description": "ESlint config presets",
 	"packageManager": "pnpm@7.11.0",
@@ -12,9 +12,21 @@
 	"scripts": {
 		"release": "pnpm -r publish --scope=@myleslinder --access public"
 	},
-	"dependencies": {},
+	"dependencies": {
+		"@remix-run/eslint-config": "^1.7.0",
+		"@myleslinder/eslint-config-react": "workspace:*",
+		"@myleslinder/eslint-config-ts": "workspace:*"
+	},
 	"devDependencies": {
-		"prettier": "2.7.1"
+		"eslint": "^8.5.0"
+	},
+	"pnpm": {
+		"peerDependencyRules": {
+			"ignoreMissing": [
+				"react",
+				"react-dom"
+			]
+		}
 	},
 	"keywords": [],
 	"author": "Myles Linder",

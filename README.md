@@ -4,13 +4,11 @@ eslint configs for use in personal projects
 
 ## Usage
 
-### Install
+### Base
 
 ```bash
 pnpm add -D eslint prettier @myleslinder/eslint-config
 ```
-
-#### Base
 
 ```json
 {
@@ -18,21 +16,37 @@ pnpm add -D eslint prettier @myleslinder/eslint-config
 }
 ```
 
-#### TypeScript
+### TypeScript
+
+```bash
+pnpm add -D eslint prettier @myleslinder/eslint-config-ts
+```
 
 ```json
 {
-	"extends": "@myleslinder/eslint-config/ts"
+	"extends": "@myleslinder/eslint-config-ts"
 }
 ```
 
-#### Remix (with TypeScript)
+### React (with TypeScript)
+
+```bash
+pnpm add -D eslint prettier @myleslinder/eslint-config-react
+```
+
+```json
+{
+	"extends": "@myleslinder/eslint-config-react"
+}
+```
+
+### Remix (with TypeScript)
 
 Includes [`@remix-run/eslint-config`](https://www.npmjs.com/package/@remix-run/eslint-config).
 
 ```json
 {
-	"extends": "@myleslinder/eslint-config/remix"
+	"extends": "@myleslinder/eslint-config-remix"
 }
 ```
 

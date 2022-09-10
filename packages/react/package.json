@@ -1,0 +1,32 @@
+{
+	"name": "@myleslinder/eslint-config-react",
+	"version": "0.0.1",
+	"description": "ESlint config presets react",
+	"packageManager": "pnpm@7.11.0",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/myleslinder/eslint-config"
+	},
+	"homepage": "https://github.com/myleslinder/eslint-config",
+	"sideEffects": false,
+	"dependencies": {
+		"@myleslinder/eslint-config-ts": "workspace:*",
+		"eslint-plugin-jsx-a11y": "^6.6.1",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"eslint-plugin-react": "^7.31.1"
+	},
+	"devDependencies": {
+		"eslint": "^8.5.0"
+	},
+	"pnpm": {
+		"peerDependencyRules": {
+			"ignoreMissing": [
+				"react",
+				"react-dom"
+			]
+		}
+	},
+	"keywords": [],
+	"author": "Myles Linder",
+	"license": "MIT"
+}
