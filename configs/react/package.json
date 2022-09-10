@@ -9,6 +9,9 @@
 	},
 	"homepage": "https://github.com/myleslinder/eslint-config",
 	"sideEffects": false,
+	"scripts": {
+		"release": "npm publish --scope=@myleslinder --access public"
+	},
 	"dependencies": {
 		"@myleslinder/eslint-config-ts": "workspace:*",
 		"eslint-plugin-jsx-a11y": "^6.6.1",

@@ -10,7 +10,7 @@
 	"homepage": "https://github.com/myleslinder/eslint-config",
 	"sideEffects": false,
 	"scripts": {
-		"release": "pnpm -r publish --scope=@myleslinder --access public"
+		"release": "pnpm --filter \"@myleslinder/eslint-config*\" -r release"
 	},
 	"dependencies": {},
 	"devDependencies": {
